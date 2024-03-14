@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-bt" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="shortcut icon" href="../img/este.png">
+    <title>Chuvente app</title>
+  </head>
+  <body class="cor">
+    <section class="row">
+      <header>
+          <img src="../img/este.png" alt="Logotipo chuvente" class="logo">
+    			<nav class="col-12 menu">
+    				<ul>
+    					<li><a href="../index.html">Chuvente</a></li>
+              <li><a href="../html/aplicativo.html">Aplicativo</a></li>
+    					<li><a href="../html/alagamentos.html">Alagamentos</a></li>
+    					<li><a href="../html/grupo.html">Grupo</a></li>
+    					<li><a href="../html/contato.html">Contato</a></li>
+    				</ul>
+    			</nav>
+    	</header>
+      <article class="contato">
+				<h1 class="h1trb">Trabalhe Conosco</h1>
+	    	<form class="col-10"method="post" action="maiton:edsonap.silva@hotmail.com">
+	    		<fieldset class="col-4"> <legend>Dados Pessoais</legend>
+      			<label for="Nome">Nome:</label>
+						<input class="preto" type="text" name="tNome" id="cNome" size="40" maxlength="30" placeholder="Nome Completo" />
+      			<label for="Mail">E-mail:</label>
+						<input class="preto" type="E-mail" name="tMail" id="cMail" size="40" maxlength="30"/>
+              <label for="candidato_usuario_cpf">CPF</label>
+              <input class="preto" ng-required="true" type="text" id="candidato_cpf" name="cpf" maxlength="11">
+              <label for="candidato_rg">RG</label>
+              <input class="preto" type="text" id="candidato_rg" name="nome" maxlength="15">
+						<label for="Date">Data de Nascimento:</label>
+ 						<input class="preto" type="date" name="tNasc" id="cNasc" />
+      		</fieldset>
+					<fieldset class="col-4"><legend>Endereço</legend>
+						<label for="cLogradouro">Endereço:</label>
+        		<input class="preto" type="text" name="tRua" id="cRua" size="40" maxlength="30" placeholder="Rua, Avenida..."/>
+						<label for="Numero">Número:</label>
+						<input class="preto" type="number" name="tNum" id="cNum" min="0" max="9999" size="10"/>
+            <label for="cep" class="ng-binding">Cep</label>
+            <input class="preto"type="text" ui-br-cep-mask="" id="candidato_endereco_cep" maxlength="12">
+						<label for="Cidade">Cidade:</label>
+ 						<input class="preto" type="text" name="tCid" id="cCid" size="20" maxlength="40" size="40"/>
+						<label class="ng-binding">UF</label>
+            <select class="preto"id="country" name="country">
+              <option value="sao_paulo">São Paulo</option>
+              <option value="rio">Rio de Janeiro</option>
+              <option value="usa">Minas Gerais</option>
+              <option value="usa">Bahia</option>
+            </select>
+      		</fieldset>
+					<fieldset><legend>Resumo das Qualificações</legend>
+        		<textarea class="preto" name="tmsg" id="cMsg" cols="45" rows="5" placeholder="fale sobre você..."></textarea>
+						<button>Enviar</button>
+					</fieldset>
+    		</form>
+			</article>
+      <footer class="col-12">
+       <a href="#"><img src="../img/facebook.png" alt="facebook"></a>
+       <a href="#"><img src="../img/instagram.png" alt="instagram"></a>
+       <a href="#"><img src="../img/twitter.png" alt="twitter"></a>
+       <a href="#"><img src="../img/github.svg" alt="github"></a>
+       <p class="col-4">direitos reservados @CHUVENTE app.</p>
+      </footer>
+    </section>
+  </body>
+</html>

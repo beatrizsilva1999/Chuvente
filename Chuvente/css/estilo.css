@@ -1,0 +1,291 @@
+@charset "UTF-8";
+@import "normalize.css";
+@import "mq.css" screen and (max-width: 768px);
+/***************** CHAMADA DO CSS GRIDE ***********************/
+.cor{
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-10 {width: 83.33%;}
+.col-12 {width: 100%;}
+/******************** ESTILOS PADRÃO ****************************/
+h1, h2{
+	color: orange;
+  text-align:center;
+}
+a{
+  color:white;
+}
+a:hover{
+  color: orange;
+}
+header {
+  background: #584b4f;
+  height: 90px;
+  width: 100%;
+  position: absolute;
+}
+header {
+  position: relative;
+}
+footer {
+  display: block;
+  position: relative;
+	background: #584b4f;
+}
+footer img{
+  margin: 1% 2%;
+  float:left;
+  width: 2.6%;
+  height:auto;
+}
+footer img:hover{
+  border-radius: 50%;
+  box-shadow: 0 0 10px 1px orange;
+}
+footer p{
+  margin: 0% 0% 0% 15%;
+}
+/**************** PADRÃO DO MENU********************/
+.logo1{
+  width: 4%;
+  height:auto;
+  margin: 14px 0 0 8%;
+}
+.logo{
+  width: 4%;
+  height:auto;
+  margin: 14px 0 0 8%;
+}
+.menu {
+  position: absolute;
+  right: 0;
+  top: -.5em;
+}
+.menu ul {
+  margin: 2% 0 0 30% ;
+}
+.menu li {
+  padding: 0% 1%;
+  margin:0 2%;
+  display: inline-block;
+}
+.menu a {
+  font-size: 20px;
+  text-decoration: none;
+}
+/************************* PAGINA DA HOME **************************/
+.video{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -1000;
+	background-size: cover;
+}
+.destaque p {
+  padding: 10%;
+  margin-bottom: 8%;
+  font-size: 170%;
+}
+.lista button {
+  width: 70%;
+  height: auto;
+  color: #ffffff;
+  background: #fe9b00;
+  border: 0;
+  padding:3.5%;
+  border-radius: 8px;
+  font-weight: bold;
+}
+.lista{
+  width: 11%;
+  height: 237px;
+	margin: 10% 10% 8% 10%;
+	background-color: rgba(0, 0, 0, 0.4);
+	font-size: 20px;
+	padding: 10px 0px 10px 0px ;
+	text-align: center;
+	list-style: none;
+	border-radius: 20px;
+	border: 2px solid #584b4f;
+}
+.lista li{
+    margin: 10px 0px;
+    padding: 10px ;
+    border-left: none;
+    border-bottom: 2px solid #4e4b4d;
+    border-radius: 20px;
+}
+/***********************PAGINA APLICATIVO*******************/
+.prircipal{
+  width:100%;
+  height: auto;
+}
+h1{
+  text-align: center;
+}
+.direito{
+  margin: 5% 0% 0% 5%;
+}
+.esquerdo{
+  margin: 5% 0% 0% 0%;
+}
+.esquerdo p{
+  margin: 0% 0% 20% 0%;
+}
+.direito p{
+  margin: 0% 0% 10% 0%;
+}
+/********************** PAGINA ALAGAMENTOS  ***********************/
+.video1{
+  position: relative;
+  left: 30%;
+  top:70px;
+  width:40%;
+  height:auto;
+}
+caption{
+  margin: 0% 0% 3% 0%;
+  font-weight: bold;
+  font-size: 200%;
+}
+table {
+  margin: 8%;
+  height: auto;
+}
+th{
+  margin:100px;
+}
+th, td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+tr:hover {
+  background-color:white;
+  color: black;
+}
+
+/****************** PAGINA GRUPO **********************/
+.fotos {
+    border: 2px solid #584b4f;
+    float: left;
+    width: 24.99999%;
+}
+figure.fotos img {
+    width: 100%;
+    height: auto;
+
+}
+figcaption.desc {
+    padding: 15px;
+}
+.ajuste{
+  position: relative;
+  left: 300px;
+}
+/***mensagem do programador*******/
+.balao {
+    position: relative;
+    display: inline-block;
+}
+.balao .mensagem {
+    visibility: hidden;
+    background-color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 85%;
+    left: 50%;
+    margin-left: -60px;
+    width: 100%;
+}
+.balao .mensagem::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+.balao:hover .mensagem {
+    visibility: visible;
+}
+
+/******************* PAGINA CONTATO ***********************/
+.contato input,
+.contato button {
+  display: block;
+}
+form {
+  margin: 2% auto 6% 10%;
+
+}
+.contato input,
+textarea {
+  width: 100%;
+  height: auto;
+  margin-bottom:8%;
+  padding: 3%;
+}
+.contato button {
+  margin: 3% 0 0 0;
+  background: #fe9b00;
+  border: 0;
+  color: #fff;
+  width: 210px;
+  height: 38px;
+  font-size: 1.2em;
+  border-radius: 0.3em;
+  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+}
+.contato h1{
+  text-align: center;
+}
+.preto{
+  color:black;
+}
+.linha{
+  border:0px;
+  margin-left: 15%;
+  padding: 5%;
+}
+.endereco{
+  list-style: none;
+  margin: 2% 0% 0% 6% ;
+}
+.enderecoli{
+  padding: 3% 0% 5% 12%;
+  border-bottom: 2px solid #584b4f;
+  border-left: 2px solid #584b4f;
+}
+.enderecoli b{
+  display: block;
+  margin: 0% 20% 6% 0%;
+}
